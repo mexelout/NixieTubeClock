@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E38646901C77A6BE00E91CD7 /* NixieTubeClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386468F1C77A6BE00E91CD7 /* NixieTubeClockView.swift */; };
 		E386469E1C77C78500E91CD7 /* nixie_tube_numbers.png in Resources */ = {isa = PBXBuildFile; fileRef = E386469D1C77C78500E91CD7 /* nixie_tube_numbers.png */; };
+		E3898A401C7EB8D300AF52AA /* NixieTubeClock.saver in Resources */ = {isa = PBXBuildFile; fileRef = E3898A3F1C7EB8D300AF52AA /* NixieTubeClock.saver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		E386468E1C77A6BE00E91CD7 /* NixieTubeClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NixieTubeClock-Bridging-Header.h"; sourceTree = "<group>"; };
 		E386468F1C77A6BE00E91CD7 /* NixieTubeClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NixieTubeClockView.swift; sourceTree = "<group>"; };
 		E386469D1C77C78500E91CD7 /* nixie_tube_numbers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nixie_tube_numbers.png; sourceTree = SOURCE_ROOT; };
+		E3898A3F1C7EB8D300AF52AA /* NixieTubeClock.saver */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NixieTubeClock.saver; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 		E38646771C77A68C00E91CD7 = {
 			isa = PBXGroup;
 			children = (
+				E3898A3E1C7EB89D00AF52AA /* binary */,
 				E38646831C77A68C00E91CD7 /* NixieTubeClock */,
 				E38646971C77B35600E91CD7 /* Images */,
 				E38646821C77A68C00E91CD7 /* Products */,
@@ -50,6 +53,7 @@
 		E38646831C77A68C00E91CD7 /* NixieTubeClock */ = {
 			isa = PBXGroup;
 			children = (
+				E3898A3F1C7EB8D300AF52AA /* NixieTubeClock.saver */,
 				E38646881C77A68C00E91CD7 /* Info.plist */,
 				E386468F1C77A6BE00E91CD7 /* NixieTubeClockView.swift */,
 				E386468E1C77A6BE00E91CD7 /* NixieTubeClock-Bridging-Header.h */,
@@ -64,6 +68,13 @@
 			);
 			name = Images;
 			path = NixieTubeClock;
+			sourceTree = "<group>";
+		};
+		E3898A3E1C7EB89D00AF52AA /* binary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = binary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3898A401C7EB8D300AF52AA /* NixieTubeClock.saver in Resources */,
 				E386469E1C77C78500E91CD7 /* nixie_tube_numbers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +311,7 @@
 				E386468D1C77A68C00E91CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
