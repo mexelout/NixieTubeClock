@@ -1,0 +1,2 @@
+gcc -mwindows NixieTubeClock.cpp resource.o -o NixieTubeClock.exe
+
