@@ -51,17 +51,17 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp){
 
 			ReleaseDC(hwnd, hdc);
 
+			ShowCursor(FALSE);
 			SetTimer(hwnd, 1, 10, NULL);
 
 			return 0;
 		}
 		case WM_TIMER: {
 			SYSTEMTIME st;
-			GetSystemTime(&st);
-			// wHour‚ğ‚XŠÔ‘«‚µ‚ÄA“ú–{ŠÔ‚É‚·‚é
+			GetLocalTime(&st);
 			wsprintf(str, "%04d%02d%02d%02d%02d%02d%03d",
 			st.wYear, st.wMonth, st.wDay,
-			(st.wHour + 9) % 24, st.wMinute, st.wSecond, st.wMilliseconds);
+			st.wHour, st.wMinute, st.wSecond, st.wMilliseconds);
 
 			InvalidateRect(hwnd, NULL, false);
 			return 0;
