@@ -49,21 +49,19 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp){
 			hBitmap = LoadBitmap(hInst, "NIXIETUBE");
 			hNixiePrev = (HBITMAP)SelectObject(hNixieDC, hBitmap);
 
-			// BitBlt(hMemDC, 0, 0, 900, 230, hNixieDC, 0, 0, SRCCOPY);
-
 			ReleaseDC(hwnd, hdc);
 
+			ShowCursor(FALSE);
 			SetTimer(hwnd, 1, 10, NULL);
 
 			return 0;
 		}
 		case WM_TIMER: {
 			SYSTEMTIME st;
-			GetSystemTime(&st);
-			// wHourを９時間足して、日本時間にする
+			GetLocalTime(&st);
 			wsprintf(str, "%04d%02d%02d%02d%02d%02d%03d",
 			st.wYear, st.wMonth, st.wDay,
-			st.wHour + 9, st.wMinute, st.wSecond, st.wMilliseconds);
+			st.wHour, st.wMinute, st.wSecond, st.wMilliseconds);
 
 			InvalidateRect(hwnd, NULL, false);
 			return 0;
@@ -72,8 +70,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp){
 			PatBlt(hMemDC, 0, 0, screenWidth, screenHeight, BLACKNESS);
 
 			float rate = screenWidth / 1440.0;
-            float width = 90 * rate;
-            float height = 230 * rate;
+			float width = 90 * rate;
+			float height = 230 * rate;
 
 			NRECT r, fr;
 			r.origin.x = 0;
@@ -138,9 +136,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp){
 }
 
 int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInst, LPSTR cmdLine, int cmdShow) {
-	if(strcmp(cmdLine, "/s"))) return 0;
+	if(strcmp(cmdLine, "/s")) return 0;
 
-    hInst = hInstance;
+	hInst = hInstance;
 	WNDCLASS wc;
 
 	ZeroMemory(&wc, sizeof(WNDCLASS));
@@ -172,15 +170,15 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInst, LPSTR cmdLine, int cmdShow
 		hInstance,                                          // インスタンスハンドル
 		NULL);                                              // WM_CREATE情報
 
-    // ウィンドウの表示
-    ShowWindow(hWnd, cmdShow);                             // 表示状態の設定
-    UpdateWindow(hWnd);                                     // クライアント領域の更新
+	// ウィンドウの表示
+	ShowWindow(hWnd, cmdShow);                             // 表示状態の設定
+	UpdateWindow(hWnd);                                     // クライアント領域の更新
 
 	MSG msg;
-    while(GetMessage(&msg, NULL, 0, 0)){
-        TranslateMessage(&msg);                             // 仮想キーメッセージの変換
-        DispatchMessage(&msg);                              // ウィンドウプロシージャへ転送
-    }
+	while(GetMessage(&msg, NULL, 0, 0)){
+		TranslateMessage(&msg);                             // 仮想キーメッセージの変換
+		DispatchMessage(&msg);                              // ウィンドウプロシージャへ転送
+	}
 
 	return (int)msg.wParam;
 }
