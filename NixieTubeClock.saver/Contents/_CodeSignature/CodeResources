@@ -4,6 +4,58 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftAppKit.dylib</key>
+		<data>
+		0SerNB4e2BrNlNDeasaQdrmz3aE=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCore.dylib</key>
+		<data>
+		6sZ0bXXAsaO7lEzLyyps7zRsYs8=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCoreData.dylib</key>
+		<data>
+		3DN5Hyn5UzbEHF+0UKvJF6Bu+gY=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		0Nm6C9jKIw9x2210i3b0rARFr/k=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCoreImage.dylib</key>
+		<data>
+		1n3DHM1zscM/G1epRPVCftu5LEc=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		iJtvr6VM1aoCOxKNcryKE7UUNl8=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		cIymEyg0OpE5/S3iZxaLLFxzrIc=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		gctA3wtf3JVn/F2twJ/KNWcsvLQ=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		MWW5y3GY8wzWbnk6BvndPjt+Upg=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Info.plist</key>
+		<data>
+		qV7hJst738pYHwX2/u6mBU16uSE=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/MacOS/NixieTubeClock</key>
+		<data>
+		+7IX4LeZC9KR7FFvdB9yx8t2CMc=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Resources/nixie_tube_numbers.png</key>
+		<data>
+		o3Z2h7+D3kyOCur8WTA9Pi/z/zw=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/_CodeSignature/CodeResources</key>
+		<data>
+		YC0+Z3l0BGI+44ncQjyKwW+fU+U=
+		</data>
 		<key>Resources/nixie_tube_numbers.png</key>
 		<data>
 		o3Z2h7+D3kyOCur8WTA9Pi/z/zw=
@@ -92,6 +144,58 @@
 			<key>requirement</key>
 			<string>cdhash H"e11de3d01281a2f445ba232fdeaa9fb8e0e4c81f"</string>
 		</dict>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftAppKit.dylib</key>
+		<data>
+		0SerNB4e2BrNlNDeasaQdrmz3aE=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCore.dylib</key>
+		<data>
+		6sZ0bXXAsaO7lEzLyyps7zRsYs8=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCoreData.dylib</key>
+		<data>
+		3DN5Hyn5UzbEHF+0UKvJF6Bu+gY=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		0Nm6C9jKIw9x2210i3b0rARFr/k=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftCoreImage.dylib</key>
+		<data>
+		1n3DHM1zscM/G1epRPVCftu5LEc=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		iJtvr6VM1aoCOxKNcryKE7UUNl8=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		cIymEyg0OpE5/S3iZxaLLFxzrIc=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		gctA3wtf3JVn/F2twJ/KNWcsvLQ=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		MWW5y3GY8wzWbnk6BvndPjt+Upg=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Info.plist</key>
+		<data>
+		qV7hJst738pYHwX2/u6mBU16uSE=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/MacOS/NixieTubeClock</key>
+		<data>
+		+7IX4LeZC9KR7FFvdB9yx8t2CMc=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/Resources/nixie_tube_numbers.png</key>
+		<data>
+		o3Z2h7+D3kyOCur8WTA9Pi/z/zw=
+		</data>
+		<key>Resources/NixieTubeClock.saver/Contents/_CodeSignature/CodeResources</key>
+		<data>
+		YC0+Z3l0BGI+44ncQjyKwW+fU+U=
+		</data>
 		<key>Resources/nixie_tube_numbers.png</key>
 		<data>
 		o3Z2h7+D3kyOCur8WTA9Pi/z/zw=

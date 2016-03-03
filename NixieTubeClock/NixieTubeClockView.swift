@@ -8,7 +8,7 @@ class NixieTubeClock: ScreenSaverView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.animationTimeInterval = 0.008
+        self.animationTimeInterval = 0.033
         if let path = NSBundle(forClass: self.dynamicType).pathForResource("nixie_tube_numbers", ofType: "png") {
             nixieTubeNumbers = NSImage(contentsOfFile: path)
         }
@@ -16,7 +16,7 @@ class NixieTubeClock: ScreenSaverView {
     
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
-        self.animationTimeInterval = 0.008
+        self.animationTimeInterval = 0.033
         if let path = NSBundle(forClass: self.dynamicType).pathForResource("nixie_tube_numbers", ofType: "png") {
             nixieTubeNumbers = NSImage(contentsOfFile: path)
         }
